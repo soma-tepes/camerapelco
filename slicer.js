@@ -34,3 +34,11 @@ document.addEventListener('DOMContentLoaded', () => {
 // Detener el intervalo al hacer clic en los botones
 prevButton.addEventListener('click', () => clearInterval(intervalId));
 nextButton.addEventListener('click', () => clearInterval(intervalId));
+
+
+const body = document.body;
+const darkModeToggle = document.getElementById('dark-mode-toggle');
+
+darkModeToggle.addEventListener('click', function() {
+  body.classList.toggle('dark-mode');
+});
